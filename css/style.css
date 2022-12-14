@@ -1,0 +1,50 @@
+:root{
+  --main-background:;
+  --main-titleFont: ;
+  --main-textFont: ;
+}
+body{
+  background-image: linear-gradient(#c1cfe0, #956c7f);
+}
+.mainTitle{
+  text-align: center;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color:#d6a9c8;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .item3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .item4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+  .item5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .item7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .item8 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
