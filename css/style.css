@@ -5,6 +5,9 @@
 body{
   background-image: linear-gradient(#c1cfe0, #956c7f);
 }
+iframe{
+  padding: 5vh;
+}
 .mainTitle{
   text-align: center;
 }
@@ -12,8 +15,8 @@ body{
 img:hover{
   border-radius:50%;
   -webkit-border-radius:50%;
-  box-shadow: 0px 0px 15px 15px #ec731e;
-  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+  box-shadow: 0px 0px 15px 15px whitesmoke;
+  -webkit-box-shadow: 0px 0px 15px 15px whitesmoke;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   }
@@ -22,13 +25,15 @@ img:hover{
 
   @media only screen and (max-width: 600px) {
    img{
-    width: 80%;
+    width: 90%;
    }
    .row{
     display: flex;
     flex-direction: column;
+    margin: .5vh;
    }
    iframe{
+    padding: .5vh;
     width: 90%;
    }
   } 
