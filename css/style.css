@@ -1,5 +1,4 @@
 :root{
-  --main-background:;
   --main-titleFont: ;
   --main-textFont: ;
 }
@@ -9,42 +8,27 @@ body{
 .mainTitle{
   text-align: center;
 }
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 10px;
-    background-color: white;
-    padding: 10px;
+/* img:hover {transform:scale(1.5);} */
+img:hover{
+  border-radius:50%;
+  -webkit-border-radius:50%;
+  box-shadow: 0px 0px 15px 15px #ec731e;
+  -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
   }
-  
-  .grid-container > div {
-    background-color:#d6a9c8;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-  }
-  
-  .item1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .item3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  .item4 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
-  .item5 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  .item7 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-  .item8 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-  }
+
+
+
+  @media only screen and (max-width: 600px) {
+   img{
+    width: 80%;
+   }
+   .row{
+    display: flex;
+    flex-direction: column;
+   }
+   iframe{
+    width: 90%;
+   }
+  } 
