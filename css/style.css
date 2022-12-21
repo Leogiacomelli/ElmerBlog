@@ -2,9 +2,12 @@
   --main-titleFont: ;
   --main-textFont: ;
 }
-body{
-  background-image: linear-gradient(#c1cfe0, #956c7f);
+body{  
+  background-image: url(/imgs/usa\ background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
 }
+
 iframe{
   padding: 5vh;
 }
