@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
 :root{
-  --main-titleFont: ;
-  --main-textFont: ;
+  --main-titleFont:'Red Hat Display', sans-serif;
+  --main-textFont:'Titillium Web', sans-serif;
 }
 body{  
   background-image: url(/imgs/usa\ background.jpg);
@@ -9,10 +11,17 @@ body{
 }
 
 iframe{
-  padding: 5vh;
+  /* padding: 5vh; */
+  border: 3px solid #F4F3EE ;
 }
 .mainTitle{
   text-align: center;
+  font-family: var(--main-titleFont);
+  padding-top: 2%;
+}
+.subtitle{
+  font-family: var(--main-textFont) ;
+  padding: 1% 0 1% 0;
 }
 /* img:hover {transform:scale(1.5);} */
 img:hover{
@@ -22,11 +31,20 @@ img:hover{
   -webkit-box-shadow: 0px 0px 15px 15px whitesmoke;
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
+}
+
+@media screen and (min-width: 770px){
+  .myFlex{
+    display: inline-flex;
+    align-items: flex-start;
   }
 
+}
+  
 
 
-  @media only screen and (max-width: 600px) {
+
+  @media screen and (max-width: 600px) {
    img{
     width: 90%;
    }
